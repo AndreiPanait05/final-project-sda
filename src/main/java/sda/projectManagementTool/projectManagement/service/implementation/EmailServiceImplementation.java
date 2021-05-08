@@ -17,7 +17,7 @@ public class EmailServiceImplementation implements EmailService {
     @Override
     public void sendEmail(String emailAddress, String content) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("sda_final_project@gmail.com");
+        simpleMailMessage.setFrom("testingprojects55@gmail.com");  // sda_final_project@gmail.com
         simpleMailMessage.setTo(emailAddress);
         simpleMailMessage.setSubject("Confirmation email");
         simpleMailMessage.setText(content);
